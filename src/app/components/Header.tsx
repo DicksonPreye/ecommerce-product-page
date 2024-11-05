@@ -12,7 +12,7 @@ export default function Header() {
   };
 
   return (
-    <div className="header">
+    <header className="header">
       <div className="nav_logo">
         <svg width="138" height="20" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -23,15 +23,15 @@ export default function Header() {
         </svg>
       </div>
 
-      <div className="nav_items">
+      <nav className="nav_items">
         <div className="nav_item">Collections</div>
         <div className="nav_item">Men</div>
         <div className="nav_item">Women</div>
         <div className="nav_item">About</div>
         <div className="nav_item">Contact</div>
-      </div>
+      </nav>
 
-      <div className="nav_info">
+      <nav className="nav_info">
         <div className="nav_info-checkout" onClick={handleCheckoutClick}>
         <div id="checkoutQuantityDisplay" className="nav_info-checkout_quantity">0</div>
           <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -51,10 +51,10 @@ export default function Header() {
             height={16}
           />
         </div>
-      </div> 
+      </nav> 
 
       {showCheckoutDetails && (
-      <div className="nav_info-checkout_details">
+      <nav className="nav_info-checkout_details">
         <h2 className="heading_cart">Cart</h2>
         <div className="nav_info-checkout_details-box">
         <p className="heading_cart-text">Fall Limited Edition Sneakers <br /> $125.00</p>
@@ -67,8 +67,8 @@ export default function Header() {
         5.5s.5-.225.5-.5v-7Z" id="a"/></defs><use fill="#C3CAD9" fill-rule="nonzero" xlinkHref="#a"/></svg>
         </div>
         <button className="btn_checkout">Checkout</button>
-      </div> 
+      </nav> 
        )}
-    </div> 
+    </header> 
   );
 }

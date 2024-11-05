@@ -29,7 +29,7 @@ export default function FeatureText({ updateCheckoutQuantity }: FeatureTextProps
 
   return (
 
-    <div className="feature_text">
+    <section className="feature_text">
       <p className="feature_text-header">sneaker company</p>
       <h1 className="feature_text-edition">
         Fall Limited Edition <br /> Sneakers
@@ -47,7 +47,7 @@ export default function FeatureText({ updateCheckoutQuantity }: FeatureTextProps
 
       <div className="feature_text-checkout">
         <div className="feature_text-checkout_number">
-          <button className="feature_text-checkout_number-icon_minus" onClick={handleMinus}>
+          <button aria-label="Decrease quantity" className="feature_text-checkout_number-icon_minus" onClick={handleMinus}>
             <svg
               width="12"
               height="4"
@@ -64,7 +64,7 @@ export default function FeatureText({ updateCheckoutQuantity }: FeatureTextProps
             </svg>
           </button>
           {quantity}
-          <button className="feature_text-checkout_number-icon_add" onClick={handleAdd}>
+          <button aria-label="Increase quantity" className="feature_text-checkout_number-icon_add" onClick={handleAdd}>
             <svg
               width="12"
               height="12"
@@ -95,7 +95,7 @@ export default function FeatureText({ updateCheckoutQuantity }: FeatureTextProps
           Add to cart
         </button>
       </div> 
-    </div>  
+    </section>  
     
   );
 }

@@ -52,7 +52,7 @@ export default function FeatureImage() {
 
 
   return (
-    <div className="feature_image">
+    <section className="feature_image">
 
       <div className="feature_image-box">
         {Object.keys(images).map((key) => (
@@ -102,10 +102,10 @@ export default function FeatureImage() {
 
             {/* Button to change thumbnail & feature image */}
 
-            <button onClick={nextImage} className="btn-next_image"><svg className="icon-next_image" width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+            <button aria-label="Next image" onClick={nextImage} className="btn-next_image"><svg className="icon-next_image" width="13" height="18" xmlns="http://www.w3.org/2000/svg">
             <path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/>
             </svg></button>
-            <button onClick={previousImage} className="btn-previous_image"><svg className="icon-previous_image" width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+            <button aria-label="Previous image" onClick={previousImage} className="btn-previous_image"><svg className="icon-previous_image" width="12" height="18" xmlns="http://www.w3.org/2000/svg">
             <path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
             </button>
 
@@ -132,6 +132,6 @@ export default function FeatureImage() {
         </div>  
       )}
 
-    </div>
+    </section>
 );
 }
